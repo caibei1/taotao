@@ -1,0 +1,11 @@
+package cn.e3mall.service;
+
+import org.springframework.stereotype.Service;
+
+import cn.e3mall.pojo.TbItem;
+
+@Service
+public interface ItemService {
+
+	TbItem geTbItemById(long itemId);
+}

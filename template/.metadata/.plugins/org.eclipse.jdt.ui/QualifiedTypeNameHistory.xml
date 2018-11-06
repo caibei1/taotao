@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="cn.e3mall.mapper.TbItemMapper"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="cn.e3mall.sercive.impl.ItemSerrviceImpl"/>
+<fullyQualifiedTypeName name="cn.e3mall.sercive.ItemService"/>
+<fullyQualifiedTypeName name="cn.e3mall.pojo.TbItem"/>
+<fullyQualifiedTypeName name="cn.e3mall.sercive.impl.ItemServiceImpl"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="cn.e3mall.service.ItemService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="java.security.MessageDigest"/>
+<fullyQualifiedTypeName name="java.security.NoSuchAlgorithmException"/>
+<fullyQualifiedTypeName name="java.io.UnsupportedEncodingException"/>
+<fullyQualifiedTypeName name="java.util.UUID"/>
+<fullyQualifiedTypeName name="sha256.Sha256"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="sha256.RunThread"/>
+<fullyQualifiedTypeName name="sha256.Test.RunThread"/>
+<fullyQualifiedTypeName name="sha256.Test"/>
+<fullyQualifiedTypeName name="sha256.Test.Sha256"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.Long"/>
+<fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
+<fullyQualifiedTypeName name="java.math.BigInteger"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.omg.Messaging.SyncScopeHelper"/>
+</qualifiedTypeNameHistroy>

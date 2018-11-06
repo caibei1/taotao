@@ -1,0 +1,16 @@
+package sha256;
+
+import java.io.ByteArrayOutputStream;
+import java.math.BigInteger;
+
+public class Test1 {
+
+	public static void main(String[]args){
+		String str1 = "3c7cf842bfb4f000d20f9a29bf7ade36324f7b76ca8ec5c16b87c07e2fa44def";
+		
+		
+		System.out.println(str1.substring(0, 2));
+	}
+	
+	
+}

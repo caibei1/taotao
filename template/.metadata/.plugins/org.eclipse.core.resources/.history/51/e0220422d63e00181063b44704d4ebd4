@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//LOGGER"
+"http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	
+	
+    <appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss:SSS}] [%-5p] [method:%l]%n%m%n%n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="levelMin" value="WARN" />
+            <param name="levelMax" value="ERROR" />
+            <param name="acceptOnMatch" value="true" />
+        </filter>
+    </appender>
+
+    <appender name="RollingFileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="E:/log4j/RollingFileAppender.log" />
+        <param name="Append" value="true" />
+        <param name="MaxBackupIndex" value="10" />
+        <param name="MaxFileSize" value="1KB" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss:SSS}] [%-5p] [method:%l]%n%m%n%n" />
+        </layout>
+    </appender>
+
+    <appender name="DailyRollingFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="E:/log4j/DailyRollingFileAppender.log" />
+        <param name="append" value="true" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd-HH-mm'.log'" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss:SSS}] [%-5p] [method:%l]%n%m%n%n" />
+        </layout>
+    </appender>
+
+
+    <!-- 根logger的设置,是针对所有logger的通用配置-->
+    <root>
+        <level value ="INFO"/>
+        <appender-ref ref="ConsoleAppender"/>
+        <appender-ref ref="DailyRollingFileAppender"/>
+    </root>
+
+</log4j:configuration>

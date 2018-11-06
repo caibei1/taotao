@@ -1,0 +1,23 @@
+package cn.e3mall.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import cn.e3mall.pojo.TbItem;
+import cn.e3mall.sercive.impl.ItemSerrviceImpl;
+
+@Controller
+public class ItemController {
+	@Autowired
+	private ItemSerrviceImpl ItemSerrviceImpl;
+	
+	@ResponseBody
+	@RequestMapping("/item/{itemId}")
+	public TbItem test(@PathVariable Long itemId){
+		TbItem item = ItemSerrviceImpl.geTbItemById(itemId);
+		return item;
+	}
+}

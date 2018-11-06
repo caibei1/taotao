@@ -1,0 +1,31 @@
+package sha256;
+
+import java.awt.List;
+import java.io.ByteArrayOutputStream;
+import java.math.BigInteger;
+import java.util.LinkedList;
+
+public class Test1 {
+
+	public static void main(String[]args){
+		LinkedList<String> hashList = new LinkedList<>();
+		int length = hashList.size();
+		for (int i = 0;i<hashList.size();i++){
+			String minHash = hashList.get(i);
+			int min = i;
+			for (int j = i;j<length-i;j++){
+				if((hashList.get(j).compareTo(hashList.get(min)))<0){
+					//minHash = hashList.get(j).getHash();
+					min = j;
+				}
+				if(i!=min){
+					Hash h = hashList.get(i);
+					hashList.set(i,hashList.get(j));
+					hashList.set(j,h);
+				}
+			}
+		}
+	}
+	
+	
+}
